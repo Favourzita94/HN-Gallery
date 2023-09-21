@@ -23,13 +23,14 @@
 
 .gallery-items {
   background-color: #4f2424;
-  padding: 20px;
+  padding-left: 30px;
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
   grid-template-rows: auto; 
   gap: 10px; 
   min-height: 200px; 
   padding-top: 120px;
+  /* width:fit-content */
 }
 
 .gallery-item {
@@ -51,7 +52,7 @@
   display: flex; 
   justify-content: center;
   align-items: center;
-  padding-left: 69%;  
+  padding-left: 50%;  
 }
 
 .search-bar input {
@@ -89,7 +90,7 @@ img {
 .tag {
   background-color: #f2f2f2;
   padding: 3px 6px;
-  margin-left: 30px;
+  margin-left: 25px;
   border-radius: 15px;
 }
 
@@ -120,8 +121,6 @@ img {
 
 .signin-container {
   display: flex;
-  justify-content: flex-end; 
-  align-items: stretch;
   min-height: 120vh;
   background-color: #505a7d;
   }
@@ -130,11 +129,10 @@ img {
   flex: 2;
   background-color: #4b5166; 
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-right: 20px; 
-  display: flex;
+  padding-right: 20px;
   flex-direction: column; 
   color: white;
   }
@@ -182,25 +180,21 @@ button:hover {
   align-items: center;
   padding: 20px;
   background-color: #505a7d; 
-  border-radius: 80px;
+  border-radius: 180px;
 }
 
 .signin-image img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 20px;
-  width: 300px; 
+  border-radius: 50px;
+  width: 40%; 
   height: 300px; 
   object-fit: cover;
   border-radius: 170px;
-  margin-left: 300px;
   margin-bottom: 90px;
 }
 
 .signin-form {
   flex: 2;
   background-color: #505a7d;
-  border-radius: 8px;
   padding: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -208,30 +202,20 @@ button:hover {
   border-radius: 200px;
 }
 
-@media (max-width: 768px) {
-  .signin-box {
-    flex-direction: column;
-    width: 80%;
-  }
-  
-  .signin-image {
-    display: none; 
-  }
-}
 .avatar {
   flex: 1; 
-  display: flex;
   justify-content: center;
   align-items:flex-end;
   background-color: #505a7d;
   margin-bottom: 130px;
-  margin-right: 100px; 
+  padding-right: 100px;
 }
 
 .avatar img {
-  width: 300px;
+  width: 70%;
   height: 300px; 
   border-radius: 50%; 
+  margin-left: 4%;
 }
 .welcome-message p {
   margin-bottom: 100px;
@@ -262,50 +246,174 @@ button:hover {
 .welcome-message h1:hover {
   color: rgb(82, 136, 100);
 }
-/* 
-@media (max-width: 768px) {
+
+@media (max-width: 1080px) {
+  .signin-form h2 {
+    font-size: 14px;
+  }
+  .signin-image img {
+    width: 50%;
+  }
   .gallery-items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: auto; 
+  gap: 10px; 
   }
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 980px) {
+  .signin-form h2 {
+    font-size: 14px;
+  }
+  .signin-image img {
+    width: 40%;
+    height: 70%;
+    margin-right: 30%;
+  }
   .gallery-items {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: auto; 
+  gap: 10px; 
+  }
+  .search-bar {
+    padding-left: 30%;
   }
 }
-
-@media (min-width: 1025px) {
-  .gallery-items {
-    grid-template-columns: repeat(5, 1fr);
+@media (max-width: 900px) {
+  .signin-image img {
+    width: 50%;
+    height: 60%;
+    margin-left: 25%;
   }
-} */
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-}
-
-@media (max-width: 767px) {
-  .gallery-items {
-    grid-template-columns: repeat(1, 1fr);
+  .signin-form button {
+    font-size: 10px;
+  }
+  .signin-form h2 {
+    font-size: xx-small;
+  }
+  .email {
+    font-size: 12px;
+  }
+ .password {
+    font-size: 12px;
+  }
+  .signin-form {
+    width: 80%;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-bottom: 20%;
+  }
+  .signin-form h2 {
+    margin-top: 50%;
+  }
+  .avatar img {
+    margin-left: 10%;
+    width: 90%;
+  }
+  .signin-image img {
+    margin-right: 50%;
   }
 }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .gallery-items {
-    grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 780px) {
+    .signin-form h2 {
+      font-size: 12px;
+    }
+    .gallery-items {
+      grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto; 
+    gap: 10px; 
+    }
+    .search-bar {
+      padding-left: 20%;
+    }
+    .signin-image img {
+      width: 30%;
+      height: 60%;
+      margin-right: 35%;
+    }
+    .welcome-message h1 {
+      font-size: 16px;
+    }
+    .welcome-message p {
+      margin-left: 10%;
+      font-size: 16px;
+    }
   }
-}
-
-@media (min-width: 1025px) {
-  .gallery-items {
-    grid-template-columns: repeat(5, 1fr);
+  @media (max-width: 660px) {
+    .signin-form {
+      font-size: 12px;
+      margin-bottom: 70%;
+    }
+    .signin-form h2{
+      font-size: 12px;
+      margin-top: 30%;
+    }
+    .signin-image img {
+      width: 40%;
+      height: 70%;
+      margin-right: 50%;
+    }
+    .welcome-message h1 {
+      font-size: 14px;
+      margin-left: 20%;
+    }
+    .welcome-message p {
+      margin-left: 20%;
+      font-size: 14px;
+      margin-top: 30%;
+    }
+    .avatar img {
+      width: 100%;
+      height: 80%;
+    }
   }
-}
-
-
-
-
+  @media (max-width: 595px) {
+    .signin-container {
+      justify-content: space-evenly;    
+    }
+    .signin-box {
+      font-size: 12px;
+      width: 45%;
+      flex: 1;
+      padding-right: 10%;
+    }
+    .avatar{
+      flex: 1;
+      width: 45%;
+    }
+    .welcome-message p {
+      padding-left: 10%;
+    }
+    .welcome-message h1 {
+      padding-left: 20%;
+    }
+    .signin-image img {
+      width: 80%;
+      height: 60%;
+      margin-left: 40%;
+      margin-top: 60%;
+    }
+    .signin-form h2{
+      font-size: 8px;
+      padding-bottom: 10%;
+    }
+    .signin-form button {
+      font-size: 10px;
+      width: 80%;
+      padding: 15px;
+      background-color: #424a64; 
+      color: #fff; 
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+  @media (max-width: 500px) {
+    .search-bar {
+      padding: 3%;
+    }
+    .gallery-items {
+      grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: auto; 
+    gap: 10px; 
+    }
+  }

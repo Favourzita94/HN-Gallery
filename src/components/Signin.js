@@ -28,11 +28,12 @@ const Signin = () => {
         <p>Welcome to our vibrant and ever-growing gallery of creativity and visual inspiration. We're thrilled to have you here, 
         where artistry knows no bounds and imagination takes center stage.
         Our gallery is a celebration of human creativity, a showcase of the extraordinary.</p> 
+        </div>
+
         <img
           src="https://res.cloudinary.com/djxykfplf/image/upload/v1665605202/logo_sdcref.png"
           alt="Avatar"
         />
-      </div>
       </div>
       <div className="signin-box">
         <div className="signin-image">
