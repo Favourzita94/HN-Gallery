@@ -127,7 +127,7 @@ const Gallery = () => {
             ))}
           </div>
           {currentPage === 3 && (
-        <button onClick={handleNavigateToOtherPage}>Next</button>
+        <button onClick={handleNavigateToOtherPage} className='next'>Sign Out</button>
       )}
         </div>
       )}

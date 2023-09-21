@@ -19,7 +19,7 @@ const Signin = () => {
       setError(error.message);
     }
   };
-
+  
   return (
     <div className="signin-container">
       <div className="avatar">
@@ -37,7 +37,7 @@ const Signin = () => {
       </div>
       <div className="signin-box">
         <div className="signin-image">
-          <img src="https://res.cloudinary.com/djxykfplf/image/upload/v1692190521/WhatsApp_Image_2023-08-16_at_1.53.39_PM_qpbc4v.jpg" alt="Sign In" />
+          <img src="https://res.cloudinary.com/djxykfplf/image/upload/v1665605202/logo_sdcref.png" alt="Sign In" />
         </div>
         <div className="signin-form">
           <h2>SIGN IN TO ACCESS MY GALLERY</h2>
@@ -58,8 +58,7 @@ const Signin = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
             <button type="submit">Sign in</button>
-          </form>
-          {error && <p className="error-message">{error}</p>}
+          </form>          {error && <p className="error-message">{error}</p>}
         </div>
       </div>
     </div>

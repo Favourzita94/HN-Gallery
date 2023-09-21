@@ -227,7 +227,7 @@ button:hover {
   font-weight: bold;
   font-style: italic;
   line-height: 1.5;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); */
   transition: color 0.3s ease-in-out;
   word-spacing: 4px;
   letter-spacing: 2px;
@@ -277,6 +277,16 @@ button:hover {
   .search-bar {
     padding-left: 30%;
   }
+}
+.next {
+  width: 50%;
+  padding: 10px;
+  background-color: #424a64; 
+  color: #fff; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 
 }
 @media (max-width: 900px) {
   .signin-image img {
@@ -363,7 +373,6 @@ button:hover {
     }
     .avatar img {
       width: 100%;
-      height: 80%;
     }
   }
   @media (max-width: 595px) {
