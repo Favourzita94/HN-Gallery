@@ -78,7 +78,7 @@ const Gallery = () => {
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Search by TagName..."
+          placeholder="Search Gallery"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="inputTag"
