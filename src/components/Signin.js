@@ -10,7 +10,7 @@ const Signin = () => {
   const handleSignin = async (e) => {
     e.preventDefault();
     try {
-      if (email === 'user@example.com' && password === '1password') {
+      if (email === 'user@example.com' && password === '1Password') {
         navigate('/gallery');
       } else {
         setError('Invalid username or password');
